@@ -1,0 +1,234 @@
+ /* variables */
+
+ :root {
+     --primario: rgba(242, 61, 61, 0.836);
+     --primacioOpacity: rgb(241, 59, 59);
+     --amarillo: #F2CA52;
+     --tonoAzul: #06BFAD;
+     --blanco: #fff;
+     --resaltar:#F28177;
+ }
+
+ *{
+     padding: 0;
+     margin: 0;
+ }
+img{
+    width: 100%;
+}
+
+.resaltarRojo{
+    color: var(--resaltar);
+}
+.resaltarAmarillo{
+    color: var(--amarillo);
+}
+.blanco{
+    color: var(--blanco);
+}
+.b-turquesa{
+    background-color: var(--tonoAzul);
+}
+.b-amarillo{
+    background-color: var(--amarillo);
+}
+.b-naranja{
+    background-color: var(--resaltar);
+}
+ /*****************************navbar***********************************/
+
+ .coloramarillo{
+     color: var(--amarillo);
+ }
+ .primario{
+     color: var(--primario);
+ }
+
+ .nav-item:hover{
+    border-bottom: 1px solid var(--primario);
+ }
+.navbar-brand{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+ /*****************************jumbotron**************************************/
+
+ .jumbotron{
+     background-color: rgba(16,16,16,0.5);
+     background-image:url(../img/jumbo-index.jpg);
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 100vh;
+     position: relative;
+ }
+
+ .jumbotron::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.2);
+    z-index:1;
+ }
+ .info-jumbo h1{
+     font-size: 30px;
+    margin-bottom: 30px;
+ }
+ .info-jumbo p{
+     display:none
+ }
+
+ .btn-rojo{
+     background-color: var(--primario);
+     color:#FFF
+ }
+ .btn-rojo:hover{
+     background-color: var(--primacioOpacity);
+ }
+
+ .info-jumbo{
+     color:var(--blanco);
+    text-align: center;
+    z-index: 2;
+ }
+
+ @media (min-width:768px){
+    .info-jumbo h1{
+         font-size: 60px;
+    }
+
+    .info-jumbo p{
+        display:block;
+        margin-bottom: 40px;
+    }
+ }
+
+ /******************************* info-banenr *********************************************/
+ .info-banner-izq{
+     text-align: center;
+     font-size: 30px;
+ }
+ .info-banner-der{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+ }
+
+ .info-banner{
+     height: 160px;
+ }
+
+ @media (min-width:768px){
+    .info-banner-izq{
+        text-align: center;
+        font-size: 30px;
+    }
+ }
+
+ /************************************info-banner-fluid*****************************************************/
+.info-banner-fluid{
+    height: 250px;
+    background-image: url(../img/img-news.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 200px;
+    padding-bottom: 40px;
+}
+@media(min-width:768px){
+    .info-banner-fluid{
+        margin-top: 50px
+    }
+}
+/***************************************** nosotros - info **************************************************************/
+.nosotros{
+    padding-top: 50px;
+}
+.nosotros h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.info-nosotros-row{
+    height: 400px ;
+}
+.nosotros-img-1{
+    background-image: url(../img/img-japon.jpg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.nosotros-img-2{
+    background-image: url(../img/img-torre.jpg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.nosotros-img-3{
+    background-image: url(../img/img-inglaterra.jpg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.info-nosotros-1 h3{
+    font-size: 25px;
+    text-align: center;
+}
+@media(min-width:768px){
+    .info-nosotros-1 h3{
+        margin-top: 30px
+    }
+    .info-nosotros-row{
+        height: 250px ;
+    }
+    .nosotros-img-1, .nosotros-img-2, .nosotros-img-3{
+        display: block;
+    }
+
+}
+
+@media(min-width:1080px){
+    .info-nosotros-row{
+        height: 350px ;
+    }
+
+}
+
+/**********************************reseñas****************************************/
+.img-review img{
+    width: 100px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.row-review{
+    height: 300px;
+    border: 1px solid var(--amarillo);
+    margin: 30px
+}
+
+@media (min-width:768px){
+    .row-review{
+        height: 200px;
+    }
+}
+
+/********************************* footer ****************************************/
+
+footer{
+    background-color: var(--tonoAzul);
+    padding: 30px 10px;
+}
+
+.iconos-redes i{
+    margin: 20px 8px;
+}
+
+@media (min-width:768px){
+    .iconos-redes i{
+        margin: 0px 8px;
+    }
+}
